@@ -1,0 +1,11 @@
+// importo tutte le partials nel main.scss
+@use "./partials/reset" as *;
+@use "./partials/variables" as *;
+@use "./partials/mixin" as *;
+@use "./partials/commons" as *;
+@use "./partials/utilites" as *;
+@use "./partials/typography" as *;
+
+body {
+  color: red;
+}
