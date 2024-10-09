@@ -6,3 +6,12 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "Games";
+  src: url("@/assets/js/scss/fonts/Pumpkin Games.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.title-font {
+  font-family: "Games", sans-serif;
+}
