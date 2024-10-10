@@ -24,9 +24,9 @@ export default {
           </div>
           <div class="col-4 d-flex flex-wrap gap-3 justify-content-end">
             <a href="/">HOME</a>
-            <a href="">ABOUT</a>
-            <a href="">PROJECTS</a>
-            <a href="">CONTACTS</a>
+            <a href="#about">ABOUT</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contacts">CONTACTS</a>
           </div>
         </div>
       </div>
@@ -45,9 +45,18 @@ export default {
   background-color: transparent;
   transition: background-color 0.3s ease;
   z-index: 1000;
+  a {
+    text-decoration: none;
+    color: $thirth-color;
+  }
 }
 
 #header.scrolled {
   background-color: red;
+  color: white;
+  a {
+    text-decoration: none;
+    color: azure;
+  }
 }
 </style>

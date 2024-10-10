@@ -18,7 +18,9 @@ export default {
               <a href=""><button>Download CV</button></a>
             </div>
           </div>
-          <div class="col-6">foto</div>
+          <div class="col-6">
+            <img src="/boy1.jpg" alt="me" />
+          </div>
         </div>
       </div>
     </div>
@@ -33,5 +35,8 @@ section {
   h1 {
     font-size: 100px;
   }
+}
+img {
+  background-color: transparent;
 }
 </style>
