@@ -27,15 +27,21 @@ export default {
         <div class="content d-flex gap-2">
           <div class="col-6">
             <div class="content">
-              <h2>Hello world im</h2>
+              <h2>Hello world i'm</h2>
               <h1 class="title-font">Stefano Antonelli</h1>
-              <h3>Im a Full Stack Developer</h3>
-              <a href="#contacts"><button>Contact me!</button></a>
-              <button @click="downloadCV">Download CV</button>
+              <h3>I'm a Full Stack Developer</h3>
+              <a href="#contacts"
+                ><button class="btn me-5 mt-4 fw-semibold">
+                  Contact me!
+                </button></a
+              >
+              <button class="btn mt-4 fw-semibold" @click="downloadCV">
+                Download CV <font-awesome-icon :icon="['fas', 'angles-down']" />
+              </button>
             </div>
           </div>
           <div class="col-6">
-            <img src="/boy1.jpg" alt="me" />
+            <img src="/1.png" alt="me" />
           </div>
         </div>
       </div>
@@ -50,9 +56,17 @@ section {
   padding-top: 200px;
   h1 {
     font-size: 100px;
+    padding-top: 15px;
+    color: red;
   }
 }
 img {
   background-color: transparent;
+  width: 290px;
+  margin-left: 200px;
+}
+.btn {
+  background-color: red;
+  color: white;
 }
 </style>

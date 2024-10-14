@@ -13,12 +13,11 @@ export default {
 <template>
   <section id="about">
     <h1 class="title-font text-center mb-5">About</h1>
-    <font-awesome-icon :icon="['fas', 'user-secret']" />
 
     <div class="container">
       <div class="row">
         <div class="content d-flex flex-wrap g-2">
-          <div class="col-6 pe-5">
+          <div class="col-6 pe-5 text-white">
             <p class="mt-3">
               I started working on various frontend and backend projects,
               applying all the skills I acquired during my studies.
@@ -35,7 +34,7 @@ export default {
               class="container d-flex flex-wrap justify-content-beetween align-items-center gap-4"
             >
               <div class="content" v-for="logo in store.logos" :key="logo.id">
-                <div class="card">
+                <div class="card d-flex justify-content-center">
                   <img class="logo-img" :src="logo.img" :alt="logo.name" />
                 </div>
               </div>
@@ -53,15 +52,20 @@ section {
   background-color: $second-color;
   padding: 100px;
   h1 {
-    color: $title;
+    color: $first-color;
   }
 }
 .card {
-  background-color: transparent;
-  width: 100px;
+  width: 90px;
+  height: 90px;
   border: none;
-}
-.logo-img {
-  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to bottom, $first-color, rgb(219, 219, 219));
+  transition: transform 0.3s ease; // Transizione per lo zoom
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2); // Zoom al passaggio del mouse
+  }
 }
 </style>

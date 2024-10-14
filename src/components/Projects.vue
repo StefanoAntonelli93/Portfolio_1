@@ -17,7 +17,7 @@ section {
   background-color: $first-color;
   padding: 100px;
   h1 {
-    color: $thirth-color;
+    color: red;
   }
 }
 </style>

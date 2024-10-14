@@ -10,17 +10,17 @@ export const store = reactive({
     {
       id: 2,
       name: "CSS",
-      img: "/logo/css.png",
+      img: "/logo/css.webp",
+    },
+    {
+      id: 4,
+      name: "Javascript",
+      img: "/logo/js.webp",
     },
     {
       id: 3,
       name: "Bootstrap",
       img: "/logo/bootstrap.webp",
-    },
-    {
-      id: 4,
-      name: "Javascript",
-      img: "/logo/js.png",
     },
     {
       id: 5,
@@ -35,7 +35,7 @@ export const store = reactive({
     {
       id: 7,
       name: "PHP",
-      img: "/logo/php.jpeg",
+      img: "/logo/php.png",
     },
     {
       id: 8,

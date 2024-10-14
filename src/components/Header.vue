@@ -20,9 +20,9 @@ export default {
           class="content d-flex flex-wrap justify-content-between align-items-center"
         >
           <div class="col-8">
-            <div class="fw-bold"><a href="">PORTFOLIO</a></div>
+            <div class="fw-bold fs-3"><a href="">PORTFOLIO</a></div>
           </div>
-          <div class="col-4 d-flex flex-wrap gap-3 justify-content-end">
+          <div class="col-4 d-flex flex-wrap gap-3 justify-content-end fw-bold">
             <a href="/">HOME</a>
             <a href="#about">ABOUT</a>
             <a href="#projects">PROJECTS</a>
@@ -47,12 +47,12 @@ export default {
   z-index: 1000;
   a {
     text-decoration: none;
-    color: $thirth-color;
+    color: $second-color;
   }
 }
 
 #header.scrolled {
-  background-color: red;
+  background-color: rgba(58, 58, 58, 0.664);
   color: white;
   a {
     text-decoration: none;
