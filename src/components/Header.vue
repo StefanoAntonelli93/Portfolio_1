@@ -22,7 +22,7 @@ export default {
           <div class="col-8">
             <div class="fw-bold fs-3"><a href="">PORTFOLIO</a></div>
           </div>
-          <div class="col-4 d-flex flex-wrap gap-3 justify-content-end fw-bold">
+          <div class="col-4 d-flex flex-wrap gap-5 justify-content-end fw-bold">
             <a href="/">HOME</a>
             <a href="#about">ABOUT</a>
             <a href="#projects">PROJECTS</a>
@@ -48,6 +48,10 @@ export default {
   a {
     text-decoration: none;
     color: $second-color;
+    transition: transform 0.3s ease; // Transizione per lo zoom
+    &:hover {
+      transform: scale(1.2); // Zoom al passaggio del mouse
+    }
   }
 }
 
@@ -58,5 +62,6 @@ export default {
     text-decoration: none;
     color: azure;
   }
+  box-shadow: 0 4px 6px rgba(65, 65, 65, 0.295);
 }
 </style>

@@ -10,7 +10,7 @@ export default {
       <div class="row">
         <div class="content d-flex justify-content-between gap-2">
           <div class="col-6">
-            <h4 class="p-3">Contacts</h4>
+            <div class="p-3 fs-2">Contacts</div>
             <div class="card">
               <div
                 class="col d-flex flex-column justify-content-start align-items-start gap-4 p-4"
@@ -40,7 +40,7 @@ export default {
             </div>
           </div>
           <div class="col-6">
-            <h4 class="p-3">Social</h4>
+            <div class="p-3 fs-2">Social</div>
             <div class="card p-4">
               <div class="d-flex flex-wrap flex-column gap-3">
                 <a href="https://github.com/StefanoAntonelli93">

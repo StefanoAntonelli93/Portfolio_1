@@ -6,11 +6,11 @@ export default {
 
 <template>
   <section id="contacts">
-    <h1 class="title-font text-center">Contacts</h1>
+    <h3 class="title-font text-center">Contacts</h3>
     <div class="container mt-5">
       <div class="row">
         <div class="col d-flex flex-column gap-3 align-items-center">
-          <h4 class="text-white fw-bold mt-4">Let's work together!</h4>
+          <h5 class="text-white fw-bold mt-4">Let's work together!</h5>
           <img src="/mail.png" alt="me" />
         </div>
         <div class="col">
@@ -54,7 +54,11 @@ export default {
               </tr>
               <tr>
                 <td colspan="2" align="center">
-                  <input class="btn fw-bold" type="Submit" value="Send" />
+                  <input
+                    class="btn fw-bold custom-shadow"
+                    type="Submit"
+                    value="Send"
+                  />
                 </td>
               </tr>
             </table>
@@ -89,5 +93,9 @@ b {
 .btn {
   background-color: $first-color;
   color: $second-color;
+  transition: transform 0.3s ease; // Transizione per lo zoom
+  &:hover {
+    transform: scale(1.2); // Zoom al passaggio del mouse
+  }
 }
 </style>

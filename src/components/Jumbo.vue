@@ -27,15 +27,18 @@ export default {
         <div class="content d-flex gap-2">
           <div class="col-6">
             <div class="content">
-              <h2>Hello world i'm</h2>
+              <h5>Hello world i'm</h5>
               <h1 class="title-font">Stefano Antonelli</h1>
-              <h3>I'm a Full Stack Developer</h3>
+              <h5>I'm a Full Stack Developer</h5>
               <a href="#contacts"
-                ><button class="btn me-5 mt-4 fw-semibold">
+                ><button class="btn me-5 mt-4 fw-semibold fs-5 custom-shadow">
                   Contact me!
                 </button></a
               >
-              <button class="btn mt-4 fw-semibold" @click="downloadCV">
+              <button
+                class="btn mt-4 fw-semibold fs-5 custom-shadow"
+                @click="downloadCV"
+              >
                 Download CV <font-awesome-icon :icon="['fas', 'angles-down']" />
               </button>
             </div>
@@ -55,7 +58,6 @@ section {
   background-color: $first-color;
   padding-top: 200px;
   h1 {
-    font-size: 100px;
     padding-top: 15px;
     color: red;
   }
@@ -66,7 +68,13 @@ img {
   margin-left: 200px;
 }
 .btn {
+  border-radius: 10px;
+  padding: 15px;
   background-color: red;
   color: white;
+  transition: transform 0.3s ease; // Transizione per lo zoom
+  &:hover {
+    transform: scale(1.2); // Zoom al passaggio del mouse
+  }
 }
 </style>

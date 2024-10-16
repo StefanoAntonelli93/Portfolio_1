@@ -53,4 +53,53 @@ export const store = reactive({
       img: "/logo/vite.png",
     },
   ],
+  dinamic_projects: [
+    {
+      id: 1,
+      name: "Deliveroo",
+      img: "/projects/deliveroo.png",
+    },
+    {
+      id: 2,
+      name: "Dc Comics",
+      img: "/projects/dc1.png",
+    },
+    {
+      id: 3,
+      name: "Netflix",
+      img: "/projects/netflix.png",
+    },
+    {
+      id: 4,
+      name: "Rick & Morty Database",
+      img: "/projects/rick.png",
+    },
+    {
+      id: 5,
+      name: "Best Songs",
+      img: "/projects/vinile.png",
+    },
+    {
+      id: 6,
+      name: "Whatsapp",
+      img: "/projects/whatsapp.png",
+    },
+  ],
+  static_projects: [
+    {
+      id: 1,
+      name: "Discord",
+      img: "/projects/discord.webp",
+    },
+    {
+      id: 1,
+      name: "Dropbox",
+      img: "/projects/dropbox.png",
+    },
+    {
+      id: 1,
+      name: "Zalando",
+      img: "/projects/zalando.webp",
+    },
+  ],
 });
