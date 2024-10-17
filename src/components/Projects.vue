@@ -96,4 +96,11 @@ section {
 .card:hover .overlay {
   opacity: 1;
 }
+
+// responsive
+@media screen and (max-width: 576px) {
+  h3 {
+    font-size: 50px;
+  }
+}
 </style>

@@ -8,8 +8,8 @@ export default {
   <footer class="py-3">
     <div class="container">
       <div class="row">
-        <div class="content d-flex justify-content-between gap-2">
-          <div class="col-6">
+        <div class="content d-flex justify-content-between gap-3">
+          <div class="col-xl-6 col-lg-6 col-md-12">
             <div class="p-3 fs-2">Contacts</div>
             <div class="card">
               <div
@@ -39,11 +39,11 @@ export default {
               <div class="col"></div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-xl-6 col-lg-6 col-md-12">
             <div class="p-3 fs-2">Social</div>
             <div class="card p-4">
               <div class="d-flex flex-wrap flex-column gap-3">
-                <a href="https://github.com/StefanoAntonelli93">
+                <a class="social" href="https://github.com/StefanoAntonelli93">
                   <font-awesome-icon
                     class="icon me-2 align-middle"
                     :icon="['fab', 'square-github']"
@@ -51,6 +51,7 @@ export default {
                   Github</a
                 >
                 <a
+                  class="social"
                   href="https://www.linkedin.com/in/stefano-antonelli-951b392b0/"
                 >
                   <font-awesome-icon
@@ -102,5 +103,33 @@ footer {
 
 .policy {
   font-size: 12px;
+}
+
+.social:hover {
+  color: $second-color;
+}
+
+// responsive
+@media screen and (max-width: 992px) {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 540px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .card {
+    width: 100%;
+  }
 }
 </style>

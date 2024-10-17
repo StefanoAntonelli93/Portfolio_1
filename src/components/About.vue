@@ -17,7 +17,7 @@ export default {
     <div class="container">
       <div class="row">
         <div class="content d-flex flex-wrap g-2">
-          <div class="col-6 pe-5 text-white fw-semibold">
+          <div class="col-lg-6 col-md-12 pe-5 text-white fw-semibold">
             <p>
               I started working on various frontend and backend projects,
               applying all the skills I acquired during my studies.
@@ -32,7 +32,7 @@ export default {
 
             <p class="mt-3">I enjoy outdoor sports and video games!</p>
           </div>
-          <div class="col-6 text-center">
+          <div class="col-lg-6 col-md-12 text-center">
             <div
               class="container d-flex flex-wrap justify-content-beetween align-items-center gap-4"
             >
@@ -69,6 +69,28 @@ section {
 
   &:hover {
     transform: scale(1.2); // Zoom al passaggio del mouse
+  }
+}
+
+// responsive
+@media screen and (max-width: 768px) {
+  section {
+    padding: 20px;
+  }
+  .card {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 992px) {
+  section {
+    padding: 20px;
+  }
+  .card {
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
   }
 }
 </style>

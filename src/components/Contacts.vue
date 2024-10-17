@@ -9,65 +9,69 @@ export default {
     <h3 class="title-font text-center">Contacts</h3>
     <div class="container mt-5">
       <div class="row">
-        <div class="col d-flex flex-column gap-3 align-items-center">
+        <div
+          class="col-xl-6 col-lg-12 col-md-12 d-flex flex-column gap-3 align-items-center"
+        >
           <h5 class="text-white fw-bold mt-4">Let's work together!</h5>
           <img src="/mail.png" alt="me" />
         </div>
-        <div class="col">
+        <div class="col-xl-6 col-lg-12 col-md-12">
           <!-- form mail -->
-          <form action="/cgi-bin/FormMail.pl" method="POST">
-            <input
-              type="hidden"
-              name="recipient"
-              value="stefano.antonelli.2024@gmail.com"
-            />
-            <input
-              type="hidden"
-              name="subject"
-              value="Nuovo messaggio da porfolio!"
-            />
-            <table border="0" cellspacing="0" cellpadding="8" align="center">
-              <tr>
-                <td><b> Name:</b></td>
-                <td align="right">
-                  <input type="text" name="realname" required />
-                </td>
-              </tr>
-              <tr>
-                <td><b>Email:</b></td>
-                <td align="right">
-                  <input type="email" name="email" required />
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2"><b>Message:</b></td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <textarea
-                    name="messaggio"
-                    cols="40"
-                    rows="5"
-                    required
-                  ></textarea>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2" align="center">
-                  <input
-                    class="btn fw-bold custom-shadow"
-                    type="Submit"
-                    value="Send"
-                  />
-                </td>
-              </tr>
-            </table>
-            <input
-              type="hidden"
-              name="required"
-              value="email,realname,messaggio"
-            />
-          </form>
+          <div class="form">
+            <form action="/cgi-bin/FormMail.pl" method="POST">
+              <input
+                type="hidden"
+                name="recipient"
+                value="stefano.antonelli.2024@gmail.com"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="Nuovo messaggio da porfolio!"
+              />
+              <table border="0" cellspacing="0" cellpadding="8" align="center">
+                <tr>
+                  <td><b> Name:</b></td>
+                  <td align="right">
+                    <input type="text" name="realname" required />
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Email:</b></td>
+                  <td align="right">
+                    <input type="email" name="email" required />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Message:</b></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <textarea
+                      name="messaggio"
+                      cols="40"
+                      rows="5"
+                      required
+                    ></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="center">
+                    <input
+                      class="btn fw-bold custom-shadow"
+                      type="Submit"
+                      value="Send"
+                    />
+                  </td>
+                </tr>
+              </table>
+              <input
+                type="hidden"
+                name="required"
+                value="email,realname,messaggio"
+              />
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -96,6 +100,25 @@ b {
   transition: transform 0.3s ease; // Transizione per lo zoom
   &:hover {
     transform: scale(1.2); // Zoom al passaggio del mouse
+  }
+}
+
+// responsive
+@media screen and (max-width: 648px) {
+  table {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    tr {
+      display: flex;
+      flex-wrap: wrap;
+      textarea {
+        width: 100%;
+      }
+    }
+  }
+  h3 {
+    font-size: 50px;
   }
 }
 </style>
