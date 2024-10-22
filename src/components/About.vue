@@ -17,7 +17,7 @@ export default {
     <div class="container">
       <div class="row">
         <div class="content d-flex flex-wrap g-2">
-          <div class="col-lg-6 col-md-12 pe-5 text-white fw-semibold">
+          <div class="col-lg-6 col-md-12 text-white fw-semibold">
             <p>
               I started working on various frontend and backend projects,
               applying all the skills I acquired during my studies.
@@ -82,6 +82,13 @@ section {
     width: 200px;
     height: 200px;
   }
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 992px) {
   section {
@@ -91,6 +98,23 @@ section {
     margin-top: 30px;
     width: 200px;
     height: 200px;
+  }
+}
+@media screen and (max-width: 497px) {
+  section {
+    padding: 20px;
+  }
+  .card {
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+  }
+  .container {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 </style>

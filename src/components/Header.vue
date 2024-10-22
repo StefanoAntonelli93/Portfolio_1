@@ -37,7 +37,7 @@ export default {
 
 <template>
   <header>
-    <div class="container-fluid px-5 py-4" id="header">
+    <div class="container-fluid" id="header">
       <div class="row">
         <div
           class="content d-flex flex-wrap justify-content-between align-items-center"
@@ -78,6 +78,7 @@ export default {
 @use "@/assets/js/scss/partials/_commons.scss" as *;
 
 #header {
+  padding: 30px;
   position: fixed;
   top: 0;
   left: 0;
@@ -177,6 +178,25 @@ export default {
   }
   .header-nav a {
     display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  #header {
+    padding: 30px 30px 30px 20px;
+  }
+}
+@media screen and (max-width: 376px) {
+  #header {
+    padding: 30px 80px 30px 20px;
+  }
+  .modal-nav,
+  .close-btn {
+    font-size: 40px; // Regola la dimensione del font se necessario
+    // Assicurati che sia centrato
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(-5%, -10%);
   }
 }
 </style>

@@ -98,9 +98,17 @@ section {
 }
 
 // responsive
+
 @media screen and (max-width: 576px) {
   h3 {
-    font-size: 50px;
+    font-size: 70px;
+    margin-left: -40px;
+  }
+}
+@media screen and (max-width: 376px) {
+  h3 {
+    font-size: 70px;
+    margin-left: -60px;
   }
 }
 </style>
