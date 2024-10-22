@@ -104,21 +104,129 @@ b {
 }
 
 // responsive
-@media screen and (max-width: 648px) {
-  table {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    tr {
-      display: flex;
-      flex-wrap: wrap;
-      textarea {
-        width: 100%;
-      }
-    }
-  }
+
+@media screen and (max-width: 376px) {
   h3 {
-    font-size: 50px;
+    font-size: 60px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  #contacts {
+    padding: 10px;
+  }
+  h5 {
+    text-align: center;
+  }
+  form {
+    width: 300px; /* Puoi cambiare la larghezza a tuo piacimento */
+    margin: auto; /* Centra il form nella pagina */
+    margin-top: 30px;
+  }
+
+  .form-group {
+    margin-bottom: 15px; /* Spazio tra i campi */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%; /* Rende gli input della stessa larghezza */
+    padding: 10px; /* Aggiunge padding per un aspetto migliore */
+    border: 1px solid #ccc; /* Bordo grigio chiaro */
+    border-radius: 4px; /* Angoli arrotondati */
+  }
+
+  .btn {
+    width: 100%; /* Pulsante della stessa larghezza */
+    padding: 20px; /* Padding per il pulsante */
+    background-color: $first-color;
+    color: $second-color;
+    margin-top: 20px;
+    border: none; /* Nessun bordo */
+    border-radius: 4px; /* Angoli arrotondati */
+    cursor: pointer; /* Cambia il cursore su hover */
+  }
+
+  .btn:hover {
+    background-color: #0056b3; /* Colore di sfondo su hover */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h3 {
+    font-size: 70px;
+    margin-top: 20px;
+  }
+  #contacts {
+    padding: 20px;
+  }
+  form {
+    width: 100%; /* Puoi cambiare la larghezza a tuo piacimento */
+    margin: auto; /* Centra il form nella pagina */
+    margin-top: 30px;
+  }
+
+  .form-group {
+    margin-bottom: 15px; /* Spazio tra i campi */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%; /* Rende gli input della stessa larghezza */
+    padding: 10px; /* Aggiunge padding per un aspetto migliore */
+    border: 1px solid #ccc; /* Bordo grigio chiaro */
+    border-radius: 4px; /* Angoli arrotondati */
+  }
+
+  .btn {
+    width: 100%; /* Pulsante della stessa larghezza */
+    padding: 20px; /* Padding per il pulsante */
+    background-color: $first-color;
+    color: $second-color;
+    margin-top: 20px;
+    border: none; /* Nessun bordo */
+    border-radius: 4px; /* Angoli arrotondati */
+    cursor: pointer; /* Cambia il cursore su hover */
+  }
+
+  .btn:hover {
+    background-color: #0056b3; /* Colore di sfondo su hover */
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  form {
+    width: 100%; /* Puoi cambiare la larghezza a tuo piacimento */
+    margin: auto; /* Centra il form nella pagina */
+    margin-top: 30px;
+  }
+  .form-group {
+    margin-bottom: 15px; /* Spazio tra i campi */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%; /* Rende gli input della stessa larghezza */
+    padding: 10px; /* Aggiunge padding per un aspetto migliore */
+    border: 1px solid #ccc; /* Bordo grigio chiaro */
+    border-radius: 4px; /* Angoli arrotondati */
+  }
+
+  .btn {
+    width: 100%; /* Pulsante della stessa larghezza */
+    padding: 20px; /* Padding per il pulsante */
+    background-color: $first-color;
+    color: $second-color;
+    margin-top: 20px;
+    border: none; /* Nessun bordo */
+    border-radius: 4px; /* Angoli arrotondati */
+    cursor: pointer; /* Cambia il cursore su hover */
+  }
+
+  .btn:hover {
+    background-color: #0056b3; /* Colore di sfondo su hover */
   }
 }
 </style>

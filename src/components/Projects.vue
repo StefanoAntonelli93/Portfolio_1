@@ -102,13 +102,32 @@ section {
 @media screen and (max-width: 576px) {
   h3 {
     font-size: 70px;
-    margin-left: -40px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #projects {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 497px) {
+  h3 {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #projects {
+    padding: 10px;
   }
 }
 @media screen and (max-width: 376px) {
   h3 {
     font-size: 70px;
-    margin-left: -60px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  #projects {
+    padding: 10px;
   }
 }
 </style>

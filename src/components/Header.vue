@@ -187,16 +187,7 @@ export default {
 }
 @media screen and (max-width: 376px) {
   #header {
-    padding: 30px 80px 30px 20px;
-  }
-  .modal-nav,
-  .close-btn {
-    font-size: 40px; // Regola la dimensione del font se necessario
-    // Assicurati che sia centrato
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: translate(-5%, -10%);
+    width: 100%;
   }
 }
 </style>

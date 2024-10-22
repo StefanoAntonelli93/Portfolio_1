@@ -127,9 +127,12 @@ footer {
     width: 450px;
   }
 }
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 376px) {
   .card {
-    width: 100%;
+    width: 350px;
+  }
+  .icon {
+    font-size: 15px;
   }
 }
 </style>
