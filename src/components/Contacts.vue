@@ -146,16 +146,15 @@ b {
     border-radius: 4px; /* Angoli arrotondati */
     cursor: pointer; /* Cambia il cursore su hover */
   }
-
-  .btn:hover {
-    background-color: #0056b3; /* Colore di sfondo su hover */
-  }
 }
 
 @media screen and (max-width: 576px) {
   h3 {
     font-size: 70px;
     margin-top: 20px;
+  }
+  h5 {
+    text-align: center;
   }
   #contacts {
     padding: 20px;
@@ -189,10 +188,6 @@ b {
     border-radius: 4px; /* Angoli arrotondati */
     cursor: pointer; /* Cambia il cursore su hover */
   }
-
-  .btn:hover {
-    background-color: #0056b3; /* Colore di sfondo su hover */
-  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -223,10 +218,6 @@ b {
     border: none; /* Nessun bordo */
     border-radius: 4px; /* Angoli arrotondati */
     cursor: pointer; /* Cambia il cursore su hover */
-  }
-
-  .btn:hover {
-    background-color: #0056b3; /* Colore di sfondo su hover */
   }
 }
 </style>
