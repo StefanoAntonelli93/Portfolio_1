@@ -1,6 +1,34 @@
 <script>
 export default {
   name: "Contacts",
+  data() {
+    return {
+      showModal: false,
+      realname: "",
+      email: "",
+      messaggio: "",
+    };
+  },
+  methods: {
+    OpenModal(event) {
+      // Controlla se il modulo è valido
+      const form = event.target;
+      if (form.checkValidity()) {
+        this.showModal = true; // Mostra il modale se il modulo è valido
+        console.log("Messaggio inviato con successo!");
+      } else {
+        // Se il modulo non è valido, attiva la validazione del browser
+        form.reportValidity();
+      }
+    },
+    CloseModal() {
+      this.showModal = false;
+      this.realname = "";
+      this.email = "";
+      this.messaggio = "";
+      console.log("close");
+    },
+  },
 };
 </script>
 
@@ -18,7 +46,8 @@ export default {
         <div class="col-xl-6 col-lg-12 col-md-12">
           <!-- form mail -->
           <div class="form">
-            <form action="/cgi-bin/FormMail.pl" method="POST">
+            <!-- <form action="/cgi-bin/FormMail.pl" method="POST"> -->
+            <form @submit.prevent="OpenModal">
               <input
                 type="hidden"
                 name="recipient"
@@ -33,13 +62,13 @@ export default {
                 <tr>
                   <td><b> Name:</b></td>
                   <td align="right">
-                    <input type="text" name="realname" required />
+                    <input type="text" v-model="realname" required />
                   </td>
                 </tr>
                 <tr>
                   <td><b>Email:</b></td>
                   <td align="right">
-                    <input type="email" name="email" required />
+                    <input type="email" v-model="email" required />
                   </td>
                 </tr>
                 <tr>
@@ -48,7 +77,7 @@ export default {
                 <tr>
                   <td colspan="2">
                     <textarea
-                      name="messaggio"
+                      v-model="messaggio"
                       cols="40"
                       rows="5"
                       required
@@ -58,6 +87,7 @@ export default {
                 <tr>
                   <td colspan="2" align="center">
                     <input
+                      @click="OpenModal()"
                       class="btn fw-bold custom-shadow"
                       type="Submit"
                       value="Send"
@@ -71,6 +101,20 @@ export default {
                 value="email,realname,messaggio"
               />
             </form>
+
+            <!-- modale -->
+
+            <div v-if="showModal" class="modal fs-3 fw-bold">
+              <div class="modal-content p-3 border">
+                <p class="text-center p-3">Messaggio inviato con successo!</p>
+                <button
+                  class="close custom-shadow align-self-center border fw-semibold p-2"
+                  @click="CloseModal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -80,6 +124,43 @@ export default {
 </template>
 <style scoped lang="scss">
 @use "@/assets/js/scss/partials/_commons.scss" as *;
+
+// modale
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  padding: 1000px;
+  border-radius: 5px;
+  button {
+    background-color: $first-color;
+    color: $second-color;
+    border-radius: 10px;
+  }
+}
+.close {
+  cursor: pointer;
+  float: right;
+  font-size: 25px;
+  font-weight: bold;
+  &:hover {
+    color: red;
+  }
+}
+
+// fine modale
 section {
   background-color: $second-color;
   padding: 100px;
