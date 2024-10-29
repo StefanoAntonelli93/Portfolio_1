@@ -1,6 +1,8 @@
 import { createApp } from "vue";
 // import sass
 import "./assets/js/scss/main.scss";
+// import router
+import { router } from "./router";
 
 // Import all of Bootstrap's JS
 import * as bootstrap from "bootstrap";
@@ -34,4 +36,7 @@ library.add(
   faAnglesDown
 );
 
-createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
+createApp(App)
+  .component("font-awesome-icon", FontAwesomeIcon)
+  .use(router)
+  .mount("#app");

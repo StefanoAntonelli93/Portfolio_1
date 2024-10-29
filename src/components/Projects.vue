@@ -13,6 +13,9 @@ export default {
 <template>
   <section id="projects">
     <h3 class="title-font text-center">Projects</h3>
+    <router-link :to="{ name: 'Rick' }">
+      <button>vai</button>
+    </router-link>
 
     <!-- dinamic projects -->
     <p class="text-center mt-5 fw-semibold fs-3">Dynamic websites</p>
