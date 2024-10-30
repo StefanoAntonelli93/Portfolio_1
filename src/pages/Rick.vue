@@ -57,10 +57,17 @@ export default {
 </script>
 
 <template>
-  <AppHeader />
-  <!-- EMIT invoca dentro chi chiama -->
-  <SearchCharacter @search="getCharacter" />
-  <AppMain />
+  <div class="container">
+    <AppHeader />
+    <!-- EMIT invoca dentro chi chiama -->
+    <SearchCharacter @search="getCharacter" />
+    <AppMain />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.container {
+  background-color: rgba(255, 255, 255, 0.527);
+  border-radius: 20px;
+}
+</style>

@@ -6,11 +6,16 @@ export default {
 
 <template>
   <header>
-    <div class="overlay">
-      <div class="container">
-        <!-- title -->
-        <h1><a href="/">Rick and Morty Archieves</a></h1>
-      </div>
+    <div class="container">
+      <!-- button to projects -->
+      <!-- title -->
+      <h1>Rick and Morty Archieves</h1>
+      <p class="p-4">
+        Welcome to the ultimate
+        <span class="fw-semibold">Rick and Morty</span> character search tool!
+        Dive into the multiverse and easily find your favorite characters from
+        the show!
+      </p>
     </div>
   </header>
 </template>
@@ -21,44 +26,15 @@ export default {
 
 header {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   background-image: url("/images/space1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .container {
-      color: $header-text-color;
-      font-size: 30px;
-
-      h1 {
-        padding-bottom: 10px;
-        color: $header-text-color;
-        font-size: 80px;
-      }
-
-      img {
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      a {
-        color: $header-text-color;
-      }
-    }
+  height: 200px;
+  margin-top: 200px;
+  h1 {
+    font-size: 3rem;
+    padding-top: 50px;
   }
 }
 </style>

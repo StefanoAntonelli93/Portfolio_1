@@ -45,6 +45,8 @@ export default {
 
 <style scoped lang="scss">
 .card {
-  padding: 15px;
+  padding: 25px;
+  background-color: transparent;
+  border: none;
 }
 </style>

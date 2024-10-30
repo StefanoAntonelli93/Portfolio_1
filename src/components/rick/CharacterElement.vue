@@ -24,7 +24,7 @@ export default {
 <template>
   <div>
     <img :src="image" :alt="name" :style="borderStyle" />
-    <h3>{{ name }}</h3>
+    <h2>{{ name }}</h2>
     <p>{{ status }}</p>
     <p>{{ species }}</p>
   </div>
@@ -33,5 +33,17 @@ export default {
 <style scoped lang="scss">
 img {
   border: 5px solid rgb(72, 235, 99);
+  transition: transform 0.3s ease; // Transizione per lo zoom
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    z-index: 900; // Zoom al passaggio del mouse
+  }
+}
+h2 {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 </style>
