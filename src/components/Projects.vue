@@ -13,9 +13,6 @@ export default {
 <template>
   <section id="projects">
     <h3 class="title-font text-center">Projects</h3>
-    <router-link :to="{ name: 'Rick' }">
-      <button>vai</button>
-    </router-link>
 
     <!-- dinamic projects -->
     <p class="text-center mt-5 fw-semibold fs-3">Dynamic websites</p>
@@ -29,6 +26,10 @@ export default {
           <img :src="project.img" :alt="project.name" />
           <!-- overlay -->
           <div class="overlay d-flex align-items-center justify-content-center">
+            <!-- link -->
+            <router-link :to="{ name: project.routeName }">
+              <button>vai</button>
+            </router-link>
             <span class="overlay-text text-center">{{ project.name }}</span>
           </div>
         </div>

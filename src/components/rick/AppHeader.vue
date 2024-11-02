@@ -31,7 +31,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
-  margin-top: 200px;
+  margin-top: 100px;
   h1 {
     font-size: 3rem;
     padding-top: 50px;

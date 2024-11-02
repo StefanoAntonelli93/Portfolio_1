@@ -4,6 +4,11 @@ import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
+  mounted() {
+    this.$nextTick(() => {
+      document.getElementById("app").removeAttribute("v-clock");
+    });
+  },
   components: {
     Header,
     Footer,
@@ -19,4 +24,8 @@ export default {
   <Footer />
 </template>
 
-<style scoped></style>
+<style scoped>
+[v-clock] {
+  display: none;
+}
+</style>

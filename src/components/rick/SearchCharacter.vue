@@ -23,21 +23,21 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container d-flex flex-wrap justify-content-center gap-2">
     <input
       type="text"
       placeholder="Search Character"
       v-model="searchText"
       @input="emitSearch()"
     />
-    <select id="status" v-model="status">
+    <select class="bg-primary text-white border" id="status" v-model="status">
       <option value="" selected>Select status</option>
       <option class="alive" value="Alive">Alive</option>
       <option class="dead" value="Dead">Dead</option>
       <option class="unknown" value="Unknown">Unknown</option>
     </select>
-    <button @click="emitSearch()">Search</button>
-    <button @click="resetSearch()">Reset</button>
+    <button class="btn btn-success" @click="emitSearch()">Search</button>
+    <button class="btn btn-danger" @click="resetSearch()">Reset</button>
   </div>
 </template>
 

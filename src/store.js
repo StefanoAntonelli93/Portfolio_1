@@ -73,6 +73,7 @@ export const store = reactive({
       id: 4,
       name: "Rick & Morty Database",
       img: "/projects/rick.png",
+      routeName: "Rick",
     },
     {
       id: 5,
