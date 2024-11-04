@@ -24,6 +24,7 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
 library.add(
@@ -33,7 +34,8 @@ library.add(
   faLocationDot,
   faPhone,
   faEnvelope,
-  faAnglesDown
+  faAnglesDown,
+  faArrowUp
 );
 
 createApp(App)
