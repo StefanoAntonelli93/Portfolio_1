@@ -1,19 +1,16 @@
 <script>
 import Header from "./components/Header.vue";
-import Jumbo from "./components/Jumbo.vue";
-import About from "./components/About.vue";
-import Projects from "./components/Projects.vue";
-import Contacts from "./components/Contacts.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
+  mounted() {
+    this.$nextTick(() => {
+      document.getElementById("app").removeAttribute("v-clock");
+    });
+  },
   components: {
     Header,
-    Jumbo,
-    About,
-    Projects,
-    Contacts,
     Footer,
   },
 };
@@ -22,12 +19,13 @@ export default {
 <template>
   <Header />
   <main>
-    <Jumbo />
-    <About />
-    <Projects />
-    <Contacts />
+    <router-view></router-view>
   </main>
   <Footer />
 </template>
 
-<style scoped></style>
+<style scoped>
+[v-clock] {
+  display: none;
+}
+</style>

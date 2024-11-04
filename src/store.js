@@ -73,6 +73,7 @@ export const store = reactive({
       id: 4,
       name: "Rick & Morty Database",
       img: "/projects/rick.png",
+      routeName: "Rick",
     },
     {
       id: 5,
@@ -102,4 +103,17 @@ export const store = reactive({
       img: "/projects/zalando.webp",
     },
   ],
+  // rick
+  // creo array vuoto dove inserire dati del server
+  results: [],
+  // creo oggetto con link per chiamata API
+  loading: true,
+
+  // DESTRUTTURAZIONE apiUrl https://rickandmortyapi.com/api/character
+  apiInfo: {
+    url: "https://rickandmortyapi.com/api/",
+    endpoints: {
+      characters: "character",
+    },
+  },
 });

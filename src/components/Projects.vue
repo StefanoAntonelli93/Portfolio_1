@@ -26,7 +26,13 @@ export default {
           <img :src="project.img" :alt="project.name" />
           <!-- overlay -->
           <div class="overlay d-flex align-items-center justify-content-center">
-            <span class="overlay-text text-center">{{ project.name }}</span>
+            <!-- link -->
+            <router-link
+              class="text-center link-project"
+              :to="{ name: project.routeName }"
+            >
+              <span class="overlay-text text-center">{{ project.name }}</span>
+            </router-link>
           </div>
         </div>
       </div>
@@ -71,7 +77,6 @@ section {
   padding: 20px;
   background: linear-gradient(to bottom, $first-color, rgb(255, 255, 255));
   transition: transform 0.3s ease; // Transizione per lo zoom
-  cursor: pointer;
 
   &:hover {
     transform: scale(1.2);
@@ -95,6 +100,10 @@ section {
 }
 .card:hover .overlay {
   opacity: 1;
+}
+
+.link-project {
+  text-decoration: none;
 }
 
 // responsive

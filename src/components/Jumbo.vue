@@ -33,7 +33,7 @@ export default {
 </script>
 
 <template>
-  <section>
+  <section :class="{ 'no-scroll': isSmallScreen }">
     <div class="container py-5">
       <div class="row">
         <div class="content d-flex flex-wrap">
@@ -72,6 +72,10 @@ export default {
 
 <style scoped lang="scss">
 @use "@/assets/js/scss/partials/_commons.scss" as *;
+.no-scroll {
+  overflow-y: hidden; // Nasconde lo scroll verticale
+  margin: 0; // Rimuove il margine se necessario
+}
 section {
   background-color: $first-color;
   padding-top: 200px;

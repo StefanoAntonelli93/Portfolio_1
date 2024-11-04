@@ -16,7 +16,9 @@ export default {
 
     <div class="container">
       <div class="row">
-        <div class="content d-flex flex-wrap g-2">
+        <div
+          class="content d-flex flex-wrap justify-content-around align-items-center g-2"
+        >
           <div class="col-lg-6 col-md-12 text-white fw-semibold">
             <p>
               I started working on various frontend and backend projects,
@@ -32,9 +34,9 @@ export default {
 
             <p class="mt-3">I enjoy outdoor sports and video games!</p>
           </div>
-          <div class="col-lg-6 col-md-12 text-center">
+          <div class="col-lg-6 col-md-12">
             <div
-              class="container d-flex flex-wrap justify-content-beetween align-items-center gap-4"
+              class="container d-flex flex-wrap justify-content-center align-items-center gap-4"
             >
               <div class="content" v-for="logo in store.logos" :key="logo.id">
                 <div class="card d-flex justify-content-center custom-shadow">

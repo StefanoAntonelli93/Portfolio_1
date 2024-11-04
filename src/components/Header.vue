@@ -43,7 +43,7 @@ export default {
           class="content d-flex flex-wrap justify-content-between align-items-center"
         >
           <div class="col-6">
-            <div class="fw-bold fs-3"><a href="">PORTFOLIO</a></div>
+            <div class="fw-bold fs-3"><a href="/">PORTFOLIO</a></div>
           </div>
           <!--  hamburger button -->
           <div @click="openMenu" class="hamburger-btn">☰</div>
@@ -51,9 +51,9 @@ export default {
             class="header-nav col-6 d-flex flex-wrap gap-5 justify-content-end fw-bold"
           >
             <a href="/">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#contacts">CONTACTS</a>
+            <a href="/#about">ABOUT</a>
+            <a href="/#projects">PROJECTS</a>
+            <a href="/#contacts">CONTACTS</a>
           </div>
 
           <!-- modale hamburger -->
