@@ -11,6 +11,7 @@ export default {
   },
   methods: {
     emitSearch() {
+      // this.$emit('nomeEvento', dati, dati)
       this.$emit("search", this.searchText, this.status);
     },
     resetSearch() {

@@ -59,7 +59,7 @@ export default {
 <template>
   <div class="container">
     <AppHeader />
-    <!-- EMIT invoca dentro chi chiama -->
+    <!-- EMIT @nomeEvento="funzione" -->
     <SearchCharacter @search="getCharacter" />
     <AppMain />
   </div>

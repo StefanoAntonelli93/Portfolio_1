@@ -1,7 +1,7 @@
 <script>
 export default {
   name: "CharacterElement",
-  // chiave props
+  // props passate da genitore characterList
   props: ["image", "name", "status", "species"],
   computed: {
     borderStyle() {

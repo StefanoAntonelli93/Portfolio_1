@@ -28,6 +28,7 @@ export default {
     v-for="(character, index) in listCharacter()"
     :key="index"
   >
+    <!-- cosa passo a characterElement con le props -->
     <CharacterElement
       class="card"
       :image="character.image"
